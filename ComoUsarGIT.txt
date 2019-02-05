@@ -1,0 +1,8 @@
+git clone URL_Del_Repositorio				Descarga el repositorio q esta en la nube de GIT
+	
+git add .						Detecta cuales son las diferencias en el REPO local respecto al REPO de la nube de GIT
+
+git commit -m "Comentario del commit"			Agrego comentario sobre la modificacion que hemos realizado (descriptivo, significativo)
+
+git push						Subo a la nube de GIT todo lo trabajado; puedo haber hecho muchos git add y git commit previamente y luego subir todo junto
+
