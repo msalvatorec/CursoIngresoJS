@@ -32,7 +32,7 @@ function multiplicar()
 	primerNumero	= document.getElementById("numeroUno").value;
 	segundoNumero	= document.getElementById("numeroDos").value;
 	resultadoMultiplicacion = parseInt(primerNumero) * parseInt(segundoNumero);
-	alert ("La multiplicacion es"+resultadoMultiplicacion);
+	alert ("La multiplicacion es "+resultadoMultiplicacion);
 }
 
 function dividir()
@@ -43,6 +43,6 @@ function dividir()
 	primerNumero	= document.getElementById("numeroUno").value;
 	segundoNumero	= document.getElementById("numeroDos").value;
 	resultadoDivision = parseInt(primerNumero) / parseInt(segundoNumero);
-	alert ("La division es"+resultadoDivision);
+	alert ("La division es "+resultadoDivision);
 }
 
