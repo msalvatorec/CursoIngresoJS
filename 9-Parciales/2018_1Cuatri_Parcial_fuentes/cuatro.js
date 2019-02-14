@@ -7,19 +7,25 @@ function mostrar()
 
 	var cantidadProductos = prompt("Ingrese cantidad de productos comprados");
 	var importeTotal = prompt("Ingrese importe TOTAL de la compra");
-	var formaDePago = prompt("Ingrese el metodo de pago (en minusculas: tarjeta u cualquier otro)");
-	var importeConSinDescuentos=importeTotal;
+	var formaDePago = prompt("Ingrese el metodo de pago (en minusculas: 1- tarjeta o 2 - cualquier otro)");
+	var importeConSinDescuentos;
+/* si gato 10000 , y pago en efectivo, deberia pagar  7500*/
+	importeTotal=parseInt(importeTotal);
+	cantidadProductos=parseInt(cantidadProductos);
+	importeConSinDescuentos=importeTotal;
 
-	if (cantidadProductos>2)
-	{
-		importeConSinDescuentos=parseInt(importeTotal)*0.9;
-	
-		if (importeTotal>2000)
+	if(cantidadProductos>2)
 		{
-			importeConSinDescuentos=importeConSinDescuentos*.85;
+			if(importeTotal>2000)
+				{
+					importeConSinDescuentos=importeConSinDescuentos*0.75;
+				}
+			else
+				{
+					importeConSinDescuentos=importeConSinDescuentos*0.9;
+				}
 		}
 
-	}
 
 	if (formaDePago=="tarjeta")
 	{
@@ -27,5 +33,9 @@ function mostrar()
 	}
 
 	alert("El importe total es de: "+importeConSinDescuentos);
+
+
+
+	
 	
 }
