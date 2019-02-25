@@ -1,4 +1,46 @@
-FOR(Declaraciòn de variables ;condicion lògica ;ejecución de algo q querramos hacer )
+FOR(Declaraciòn/Inicializaciòn de variables ;condicion lògica ;ejecución de algo q querramos hacer )
 {
 	ACCIONES PROPIAS DEL CICLO
 }
+
+
+
+ejemplo:
+
+for (contador=0; contador<10; contador=contador+1)
+	{
+		console.log(contador);
+		alert(contador);
+		
+	}
+
+Este ejemplo es igual a esto:
+
+
+
+var contador=0;	
+
+for (; contador<10;contador++;)
+	{		
+		console.log(contador);	
+		alert(contador);
+	}
+
+
+que tambien es igual a esto:
+
+var contador=0;	
+
+for (; contador<10;)
+	{		
+		console.log(contador);	
+		alert(contador);
+		contador++;
+	}
+
+
+
+En la sintaxis del ciclo FOR es indispensable colocar el 2do parametro (la condiciòn de corte del ciclo). Los otros dos parametros son opcionales. Pueden usarse igual que el WHILE, es decir:
+	-Declaraciòn de variables antes del Ciclo (Si lo pongo adentro del ciclo rompe pq la variable que compara el corte de ciclo no esta declarada hasta aùn
+	-Acciones propias del ciclo para que no quede estancado; es el caso de los contadores y acumuladores que se ejecutan dentro del ciclo y modifican a la variable directa o indirectamente de la condiciòn de corte.
+
