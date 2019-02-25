@@ -1,0 +1,4 @@
+FOR(Declaraciòn de variables ;condicion lògica ;ejecución de algo q querramos hacer )
+{
+	ACCIONES PROPIAS DEL CICLO
+}
