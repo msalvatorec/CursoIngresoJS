@@ -23,11 +23,12 @@ function mostrar()
 	{
 		alert("El número "+numeroIngresado+" NO es un número perfecto");	
 	}
+
 }
 
 
 
-/* Ejercicio para buscar todos los numeros primos de un numero ingresado por prompt
+/* Ejercicio para buscar todos los numeros divisores de un numero ingresado por prompt y determinar si es primo o no
 function mostrar()
 {
 	var numeroIngresado = prompt("Por favor ingrese un número");
