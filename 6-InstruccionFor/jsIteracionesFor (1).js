@@ -18,7 +18,7 @@ var limiteCiclo=1000;
 for (i=0;i<limiteCiclo;i++)
 	{		
 		numeroAleatorio = Math.floor((Math.random() * 10) + 1);
-		console.log(numeroAleatorio);
+		
 
 		switch(numeroAleatorio){
 			case 1:
@@ -73,6 +73,11 @@ for (i=0;i<limiteCiclo;i++)
 
 	}
 
+	var palabra="luz";
+	alert(palabra[1]);
+
+	for (j=0;i<palabra.lenght;j++)
+		{console.log(palabra[j]);}
 
 	var sumaTotalNumerosSalidos=contador1+contador2+contador3+contador4+contador5+contador6+contador7+contador8+contador9+contador10;
 
@@ -89,6 +94,9 @@ for (i=0;i<limiteCiclo;i++)
 	document.write("-----------------------------------------------<br>")
 	document.write("Salieron: "+limiteCiclo+" numeros<br>");
 	document.write("La suma de todos los contadores de numeros es: "+sumaTotalNumerosSalidos);
+
+
+	
 
 
 
